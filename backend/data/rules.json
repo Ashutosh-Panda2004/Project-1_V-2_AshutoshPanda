@@ -1,0 +1,411 @@
+[
+  {
+    "rule_id": "123aa22f-a8f4-4afb-b34e-96c9d3775431",
+    "ruleString": "(age > 30)",
+    "rule_ast": {
+      "type": "BinaryExpression",
+      "operator": ">",
+      "left": {
+        "type": "Identifier",
+        "name": "age"
+      },
+      "right": {
+        "type": "Literal",
+        "value": 30,
+        "raw": "30"
+      }
+    },
+    "active": true,
+    "created_at": "2024-10-17T07:33:22.177Z",
+    "updated_at": "2024-10-17T07:37:25.846Z"
+  },
+  {
+    "rule_id": "860a2ec4-2dbc-4e8b-8276-f85fcfa580a9",
+    "ruleString": "(age < 30 && salary > 20000)",
+    "rule_ast": {
+      "type": "BinaryExpression",
+      "operator": "&&",
+      "left": {
+        "type": "BinaryExpression",
+        "operator": "<",
+        "left": {
+          "type": "Identifier",
+          "name": "age"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 30,
+          "raw": "30"
+        }
+      },
+      "right": {
+        "type": "BinaryExpression",
+        "operator": ">",
+        "left": {
+          "type": "Identifier",
+          "name": "salary"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 20000,
+          "raw": "20000"
+        }
+      }
+    },
+    "active": true,
+    "created_at": "2024-10-17T07:44:05.455Z",
+    "updated_at": "2024-10-17T07:44:25.970Z"
+  },
+  {
+    "rule_id": "17145601-6868-48a4-b301-884b371cdbcc",
+    "ruleString": "((age > 30 && salary > 20000 && department == 'Finance' && experience > 2) && (location == 'New York' && role == 'Manager'))",
+    "rule_ast": {
+      "type": "BinaryExpression",
+      "operator": "&&",
+      "left": {
+        "type": "BinaryExpression",
+        "operator": "&&",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "&&",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "left": {
+                "type": "Identifier",
+                "name": "age"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 30,
+                "raw": "30"
+              }
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "left": {
+                "type": "Identifier",
+                "name": "salary"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 20000,
+                "raw": "20000"
+              }
+            }
+          },
+          "right": {
+            "type": "BinaryExpression",
+            "operator": "==",
+            "left": {
+              "type": "Identifier",
+              "name": "department"
+            },
+            "right": {
+              "type": "Literal",
+              "value": "Finance",
+              "raw": "'Finance'"
+            }
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": ">",
+          "left": {
+            "type": "Identifier",
+            "name": "experience"
+          },
+          "right": {
+            "type": "Literal",
+            "value": 2,
+            "raw": "2"
+          }
+        }
+      },
+      "right": {
+        "type": "BinaryExpression",
+        "operator": "&&",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "==",
+          "left": {
+            "type": "Identifier",
+            "name": "location"
+          },
+          "right": {
+            "type": "Literal",
+            "value": "New York",
+            "raw": "'New York'"
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "==",
+          "left": {
+            "type": "Identifier",
+            "name": "role"
+          },
+          "right": {
+            "type": "Literal",
+            "value": "Manager",
+            "raw": "'Manager'"
+          }
+        }
+      }
+    },
+    "active": true,
+    "created_at": "2024-10-17T07:44:40.379Z",
+    "updated_at": "2024-10-17T07:44:44.700Z"
+  },
+  {
+    "rule_id": "073be5d5-fb0a-4cea-a190-e0cff4d58bdb",
+    "ruleString": "((age > 30 && salary > 20000 && department == 'Finance' && experience > 2) && (location == 'New York' && role == 'Manager'))",
+    "rule_ast": {
+      "type": "BinaryExpression",
+      "operator": "&&",
+      "left": {
+        "type": "BinaryExpression",
+        "operator": "&&",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "&&",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "left": {
+                "type": "Identifier",
+                "name": "age"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 30,
+                "raw": "30"
+              }
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "left": {
+                "type": "Identifier",
+                "name": "salary"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 20000,
+                "raw": "20000"
+              }
+            }
+          },
+          "right": {
+            "type": "BinaryExpression",
+            "operator": "==",
+            "left": {
+              "type": "Identifier",
+              "name": "department"
+            },
+            "right": {
+              "type": "Literal",
+              "value": "Finance",
+              "raw": "'Finance'"
+            }
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": ">",
+          "left": {
+            "type": "Identifier",
+            "name": "experience"
+          },
+          "right": {
+            "type": "Literal",
+            "value": 2,
+            "raw": "2"
+          }
+        }
+      },
+      "right": {
+        "type": "BinaryExpression",
+        "operator": "&&",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "==",
+          "left": {
+            "type": "Identifier",
+            "name": "location"
+          },
+          "right": {
+            "type": "Literal",
+            "value": "New York",
+            "raw": "'New York'"
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "==",
+          "left": {
+            "type": "Identifier",
+            "name": "role"
+          },
+          "right": {
+            "type": "Literal",
+            "value": "Manager",
+            "raw": "'Manager'"
+          }
+        }
+      }
+    },
+    "active": true,
+    "created_at": "2024-10-17T07:45:46.056Z",
+    "updated_at": "2024-10-17T07:45:50.988Z"
+  },
+  {
+    "rule_id": "fda231ca-f508-431e-866a-aff6b549f06a",
+    "ruleString": "((age > 30 && salary > 20000 && department == 'Finance' && experience > 2) && (location == 'New York' && role == 'Manager'))",
+    "rule_ast": {
+      "type": "BinaryExpression",
+      "operator": "&&",
+      "left": {
+        "type": "BinaryExpression",
+        "operator": "&&",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "&&",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "left": {
+                "type": "Identifier",
+                "name": "age"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 30,
+                "raw": "30"
+              }
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "left": {
+                "type": "Identifier",
+                "name": "salary"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 20000,
+                "raw": "20000"
+              }
+            }
+          },
+          "right": {
+            "type": "BinaryExpression",
+            "operator": "==",
+            "left": {
+              "type": "Identifier",
+              "name": "department"
+            },
+            "right": {
+              "type": "Literal",
+              "value": "Finance",
+              "raw": "'Finance'"
+            }
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": ">",
+          "left": {
+            "type": "Identifier",
+            "name": "experience"
+          },
+          "right": {
+            "type": "Literal",
+            "value": 2,
+            "raw": "2"
+          }
+        }
+      },
+      "right": {
+        "type": "BinaryExpression",
+        "operator": "&&",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "==",
+          "left": {
+            "type": "Identifier",
+            "name": "location"
+          },
+          "right": {
+            "type": "Literal",
+            "value": "New York",
+            "raw": "'New York'"
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "==",
+          "left": {
+            "type": "Identifier",
+            "name": "role"
+          },
+          "right": {
+            "type": "Literal",
+            "value": "Manager",
+            "raw": "'Manager'"
+          }
+        }
+      }
+    },
+    "active": true,
+    "created_at": "2024-10-17T11:06:58.375Z",
+    "updated_at": "2024-10-17T12:43:03.878Z"
+  },
+  {
+    "rule_id": "9bd6cf97-8802-4999-bf5e-a3944668babc",
+    "ruleString": "(Age > 20) && (Salary > 50000)",
+    "rule_ast": {
+      "type": "BinaryExpression",
+      "operator": "&&",
+      "left": {
+        "type": "BinaryExpression",
+        "operator": ">",
+        "left": {
+          "type": "Identifier",
+          "name": "Age"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 20,
+          "raw": "20"
+        }
+      },
+      "right": {
+        "type": "BinaryExpression",
+        "operator": ">",
+        "left": {
+          "type": "Identifier",
+          "name": "Salary"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 50000,
+          "raw": "50000"
+        }
+      }
+    },
+    "active": true,
+    "created_at": "2024-10-17T12:42:57.841Z",
+    "updated_at": "2024-10-17T12:43:02.309Z"
+  }
+]
