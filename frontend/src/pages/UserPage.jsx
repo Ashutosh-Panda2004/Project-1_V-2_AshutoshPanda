@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // frontend/src/pages/UserPage.jsx
 
 import React, { useState, useEffect, useRef } from 'react';
