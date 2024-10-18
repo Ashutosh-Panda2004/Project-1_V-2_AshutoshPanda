@@ -51,7 +51,7 @@ const InputForm = ({ setEvaluationResult }) => {
     <form onSubmit={formik.handleSubmit} className="max-w-md mx-auto">
       {/* Age Input */}
       <div className="mb-4">
-        <label className="block text-gray-700 mb-1" htmlFor="age">
+        <label className="block text-white mb-1" htmlFor="age">
           Age
         </label>
         <input
@@ -73,7 +73,7 @@ const InputForm = ({ setEvaluationResult }) => {
 
       {/* Salary Input */}
       <div className="mb-4">
-        <label className="block text-gray-700 mb-1" htmlFor="salary">
+        <label className="block text-white mb-1" htmlFor="salary">
           Salary
         </label>
         <input
@@ -95,7 +95,7 @@ const InputForm = ({ setEvaluationResult }) => {
 
       {/* Department Input */}
       <div className="mb-4">
-        <label className="block text-gray-700 mb-1" htmlFor="department">
+        <label className="block text-white mb-1" htmlFor="department">
           Department
         </label>
         <input
@@ -117,7 +117,7 @@ const InputForm = ({ setEvaluationResult }) => {
 
       {/* Experience Input */}
       <div className="mb-4">
-        <label className="block text-gray-700 mb-1" htmlFor="experience">
+        <label className="block text-white mb-1" htmlFor="experience">
           Experience (Years)
         </label>
         <input
@@ -139,7 +139,7 @@ const InputForm = ({ setEvaluationResult }) => {
 
       {/* Location Input */}
       <div className="mb-4">
-        <label className="block text-gray-700 mb-1" htmlFor="location">
+        <label className="block text-white mb-1" htmlFor="location">
           Location
         </label>
         <input
@@ -161,7 +161,7 @@ const InputForm = ({ setEvaluationResult }) => {
 
       {/* Role Input */}
       <div className="mb-4">
-        <label className="block text-gray-700 mb-1" htmlFor="role">
+        <label className="block text-white mb-1" htmlFor="role">
           Role
         </label>
         <input
