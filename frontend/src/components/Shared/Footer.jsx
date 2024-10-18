@@ -1,67 +1,47 @@
 // // frontend/src/components/Shared/Footer.jsx
 
-// import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// const Footer = () => (
-//   <footer className="bg-gray-800 text-white p-4">
-//     <div className="container mx-auto text-center">
-//       &copy; {new Date().getFullYear()} Rule Engine. All rights reserved.
-//     </div>
-//   </footer>
-// );
-
-// export default Footer;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // frontend/src/components/Shared/Footer.jsx
-
-// import React from 'react';
-// import { motion } from 'framer-motion';
-
-// const Footer = () => (
-//   <motion.footer
-//     className="bg-gray-800 text-white p-4 mt-8"
-//     initial={{ opacity: 0 }}
-//     animate={{ opacity: 1 }}
-//     transition={{ duration: 0.5 }}
-//   >
-//     <div className="container mx-auto text-center">
-//       &copy; {new Date().getFullYear()} Rule Engine. All rights reserved.
-//     </div>
-//   </motion.footer>
-// );
-
-// export default Footer;
-
-
-
-
-
-
-
-
-// frontend/src/components/Shared/Footer.jsx
-
-import React from 'react';
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(footerRef.current, {
+        scrollTrigger: {
+          trigger: footerRef.current,
+          start: "top bottom",
+          end: "bottom bottom",
+          scrub: 1,
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: 'power3.out',
+      });
+    }, footerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <footer className="bg-gray-800 p-4 mt-8">
-      <div className="container mx-auto text-center text-gray-400">
-        © {new Date().getFullYear()} Rule Engine Admin. All rights reserved.
+    <footer ref={footerRef} className="bg-black text-white p-8 mt-16">
+      <div className="container mx-auto text-center">
+        <div className="mb-4">
+          <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            Rule Engine Admin
+          </span>
+        </div>
+        <p className="text-gray-400 mb-4">
+          Empowering your decision-making process with advanced rule management.
+        </p>
+        <div className="text-sm text-gray-500">
+          © {new Date().getFullYear()} Rule Engine Admin. All rights reserved.
+        </div>
       </div>
     </footer>
   );
