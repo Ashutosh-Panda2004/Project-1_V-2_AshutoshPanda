@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 import React, { useEffect, useState } from 'react';
 import AttributeButton from '../components/Admin/AttributeButton';
 import OperatorButton from '../components/Admin/OperatorButton';
