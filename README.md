@@ -133,38 +133,80 @@ Understanding the project structure is crucial for effective development and mai
 
 ```
 interactive-rule-engine-canvas/
-├── public/
-│   ├── assets/
-│   │   ├── demo-thumbnail.png
-│   │   ├── watch-demo-button.png
-│   │   └── ... other static assets
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Admin/
-│   │   │   ├── InteractiveCanvas.jsx
-│   │   │   ├── CustomNodes/
-│   │   │   │   ├── ConditionNode.jsx
-│   │   │   │   ├── OperatorNode.jsx
-│   │   │   │   └── ContainerNode.jsx
-│   │   │   ├── Toolbar.jsx
-│   │   │   └── ConfirmationModal.jsx
-│   │   └── ... other component directories
-│   ├── api/
-│   │   └── index.js
-│   ├── hooks/
-│   │   └── useCustomHooks.js
-│   ├── styles/
-│   │   └── main.css
-│   ├── utils/
-│   │   └── helperFunctions.js
-│   ├── App.jsx
-│   └── main.jsx
 ├── .gitignore
 ├── package.json
 ├── README.md
-├── vite.config.js
-└── LICENSE
+├── yarn.lock
+├── backend/
+│   ├── .env
+│   ├── app.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── server.js
+│   ├── controllers/
+│   │   ├── ruleController.js
+│   │   └── userController.js
+│   ├── data/
+│   │   ├── rules.json
+│   │   └── users.json
+│   ├── routes/
+│   │   ├── ruleRoutes.js
+│   │   └── userRoutes.js
+│   └── utils/
+│       └── astUtils.js
+├── frontend/
+│   ├── .env
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   ├── yarn.lock
+│   ├── public/
+│   │   └── vite.svg
+│   └── src/
+│       ├── api.js
+│       ├── App.css
+│       ├── App.jsx
+│       ├── index.css
+│       ├── main.jsx
+│       ├── routes.jsx
+│       ├── assets/
+│       │   └── react.svg
+│       ├── components/
+│       │   ├── Admin/
+│       │   │   ├── AttributeButton.jsx
+│       │   │   ├── ConditionNode.jsx
+│       │   │   ├── ConfirmationModal.jsx
+│       │   │   ├── ContainerNode.jsx
+│       │   │   ├── CustomNodes.jsx
+│       │   │   ├── DragAndDropCanvas.jsx
+│       │   │   ├── EditRuleModal.jsx
+│       │   │   ├── InteractiveCanvas.jsx
+│       │   │   ├── OperatorButton.jsx
+│       │   │   ├── OperatorNode.jsx
+│       │   │   ├── RuleLink.jsx
+│       │   │   ├── RuleNode.jsx
+│       │   │   ├── RuleValidationModal.jsx
+│       │   │   ├── TextBasedEditor.jsx
+│       │   │   └── Toolbar.jsx
+│       │   ├── Shared/
+│       │   │   ├── ErrorBoundary.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   └── Navbar.jsx
+│       │   └── User/
+│       │       ├── EvaluationResult.jsx
+│       │       └── InputForm.jsx
+│       └── pages/
+│           ├── AdminPage.jsx
+│           ├── CreateRulePage.jsx
+│           ├── HomePage.jsx
+│           ├── NotFoundPage.jsx
+│           └── UserPage.jsx
+
+
 ```
 
 ### Key Directories and Files

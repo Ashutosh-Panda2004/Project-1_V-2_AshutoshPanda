@@ -1,0 +1,73 @@
+- .gitignore
+- package.json
+- README.md
+- yarn.lock
+- *backend*
+    - .env
+    - app.js
+    - package-lock.json
+    - package.json
+    - server.js
+    - *controllers*
+        - ruleController.js
+        - userController.js
+    - *data*
+        - rules.json
+        - users.json
+    - *routes*
+        - ruleRoutes.js
+        - userRoutes.js
+    - *utils*
+        - astUtils.js
+- *frontend*
+    - .env
+    - eslint.config.js
+    - index.html
+    - package-lock.json
+    - package.json
+    - postcss.config.js
+    - tailwind.config.js
+    - vite.config.js
+    - yarn.lock
+    - *public*
+        - vite.svg
+    - *src*
+        - api.js
+        - App.css
+        - App.jsx
+        - index.css
+        - main.jsx
+        - routes.jsx
+        - *assets*
+            - react.svg
+        - *components*
+            - *Admin*
+                - AttributeButton.jsx
+                - ConditionNode.jsx
+                - ConfirmationModal.jsx
+                - ContainerNode.jsx
+                - CustomNodes.jsx
+                - DragAndDropCanvas.jsx
+                - EditRuleModal.jsx
+                - InteractiveCanvas.jsx
+                - OperatorButton.jsx
+                - OperatorNode.jsx
+                - RuleLink.jsx
+                - RuleNode.jsx
+                - RuleValidationModal.jsx
+                - TextBasedEditor.jsx
+                - Toolbar.jsx
+            - *Shared*
+                - ErrorBoundary.jsx
+                - Footer.jsx
+                - Navbar.jsx
+            - *User*
+                - EvaluationResult.jsx
+                - InputForm.jsx
+        - *pages*
+            - AdminPage.jsx
+            - CreateRulePage.jsx
+            - HomePage.jsx
+            - NotFoundPage.jsx
+            - UserPage.jsx
+
