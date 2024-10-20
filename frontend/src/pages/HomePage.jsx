@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
-// frontend/src/pages/HomePage.jsx
 
->>>>>>> fb0e3a61e3405c6721c17503976864f77f6e24f3
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
@@ -89,10 +85,7 @@ const HomePage = () => {
         ref={circleRef}
         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-full filter blur-3xl opacity-20"
       ></div>
-<<<<<<< HEAD
-      
-=======
->>>>>>> fb0e3a61e3405c6721c17503976864f77f6e24f3
+
     </div>
   );
 };

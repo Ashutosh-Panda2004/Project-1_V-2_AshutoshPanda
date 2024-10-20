@@ -2,13 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-<<<<<<< HEAD
-=======
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
->>>>>>> fb0e3a61e3405c6721c17503976864f77f6e24f3
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {

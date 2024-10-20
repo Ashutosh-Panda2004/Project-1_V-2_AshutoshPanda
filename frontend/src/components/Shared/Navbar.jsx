@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-=======
+
 // // frontend/src/components/Shared/Navbar.jsx
 
->>>>>>> fb0e3a61e3405c6721c17503976864f77f6e24f3
 import React, { useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { gsap } from 'gsap';
