@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
+@layer base {
+  html, body {
+    @apply bg-black;
+    /* Ensure full height */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

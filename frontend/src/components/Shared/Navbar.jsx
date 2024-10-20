@@ -1,118 +1,56 @@
-// // frontend/src/components/Shared/Navbar.jsx
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// const Navbar = () => (
-//   <nav className="bg-blue-600 text-white p-4">
-//     <div className="container mx-auto flex justify-between items-center">
-//       <Link to="/" className="text-lg font-bold">
-//         Rule Engine
-//       </Link>
-//       <div>
-//         <Link to="/" className="mx-2 hover:underline">
-//           User Portal
-//         </Link>
-//         <Link to="/admin" className="mx-2 hover:underline">
-//           Admin Portal
-//         </Link>
-//       </div>
-//     </div>
-//   </nav>
-// );
-
-// export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // frontend/src/components/Shared/Navbar.jsx
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { motion } from 'framer-motion';
-
-// const Navbar = () => (
-//   <motion.nav
-//     className="bg-blue-600 text-white p-4"
-//     initial={{ y: -50 }}
-//     animate={{ y: 0 }}
-//     transition={{ duration: 0.5 }}
-//   >
-//     <div className="container mx-auto flex justify-between items-center">
-//       <Link to="/" className="text-lg font-bold">
-//         Rule Engine
-//       </Link>
-//       <div>
-//         <Link to="/" className="mx-2 hover:underline">
-//           User Portal
-//         </Link>
-//         <Link to="/admin" className="mx-2 hover:underline">
-//           Admin Portal
-//         </Link>
-//       </div>
-//     </div>
-//   </motion.nav>
-// );
-
-// export default Navbar;
-
-
-// frontend/src/components/Shared/Navbar.jsx
-
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { gsap } from 'gsap';
 
 const Navbar = () => {
+  const navRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(navRef.current, {
+        y: -50,
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+      });
+
+      gsap.utils.toArray('.nav-link').forEach(link => {
+        gsap.to(link, {
+          scale: 1.1,
+          duration: 0.3,
+          paused: true,
+          ease: 'power2.out',
+        }).pause();
+      });
+    }, navRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <nav className="bg-blue-600 p-4">
+    <nav ref={navRef} className="bg-black text-white p-4 fixed w-full top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
-        {/* Logo or Brand Name */}
-        <Link to="/" className="text-white text-lg font-bold">
+        <Link to="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
           Rule Engine Admin
         </Link>
 
-        {/* Navigation Links */}
-        <div className="flex space-x-4">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive
-                ? 'text-white font-semibold'
-                : 'text-blue-200 hover:text-white'
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/admin"
-            className={({ isActive }) =>
-              isActive
-                ? 'text-white font-semibold'
-                : 'text-blue-200 hover:text-white'
-            }
-          >
-            Admin Portal
-          </NavLink>
-          <NavLink
-            to="/user"
-            className={({ isActive }) =>
-              isActive
-                ? 'text-white font-semibold'
-                : 'text-blue-200 hover:text-white'
-            }
-          >
-            User Portal
-          </NavLink>
+        <div className="flex space-x-6">
+          {['/', '/admin', '/user'].map((path) => (
+            <NavLink
+              key={path}
+              to={path}
+              className={`nav-link text-lg ${
+                location.pathname === path
+                  ? 'text-white font-semibold'
+                  : 'text-gray-400 hover:text-white'
+              } transition duration-300`}
+              onMouseEnter={(e) => gsap.to(e.target, { scale: 1.1, duration: 0.3 })}
+              onMouseLeave={(e) => gsap.to(e.target, { scale: 1, duration: 0.3 })}
+            >
+              {path === '/' ? 'Home' : path.slice(1).charAt(0).toUpperCase() + path.slice(2) + ' Portal'}
+            </NavLink>
+          ))}
         </div>
       </div>
     </nav>
