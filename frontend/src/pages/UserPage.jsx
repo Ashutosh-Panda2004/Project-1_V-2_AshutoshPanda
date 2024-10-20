@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // // frontend/src/pages/UserPage.jsx
 
 // import React, { useState } from 'react';
@@ -92,6 +93,8 @@
 
 
 
+=======
+>>>>>>> fb0e3a61e3405c6721c17503976864f77f6e24f3
 // frontend/src/pages/UserPage.jsx
 
 import React, { useState, useEffect, useRef } from 'react';
