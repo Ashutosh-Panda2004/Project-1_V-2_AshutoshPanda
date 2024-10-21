@@ -395,9 +395,9 @@ We welcome contributions from the community! Follow these steps to contribute to
 
 If you have any questions, suggestions, or feedback, feel free to reach out to us:
 
-- **Email:** [support@yourwebsite.com](mailto:support@yourwebsite.com)
-- **Website:** [https://yourwebsite.com](https://yourwebsite.com)
-- **GitHub:** [https://github.com/yourusername/interactive-rule-engine-canvas](https://github.com/yourusername/interactive-rule-engine-canvas)
+- **Email:** [ashutoshpanda.india@gmail.com](mailto:ashutoshpanda.india@gmail.com)
+- **Website:** [https://ashutosh-panda2004.github.io/Portfolio-Ashutosh/](https://ashutosh-panda2004.github.io/Portfolio-Ashutosh/)
+- **GitHub:** [https://github.com/Ashutosh-Panda2004](https://github.com/Ashutosh-Panda2004)
 
 ```
 
