@@ -1,4 +1,6 @@
+
 # Interactive Rule Engine Canvas
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/01.jpg?raw=true){ width=300 height=200 }
 
 Welcome to the **Interactive Rule Engine Canvas**, a sophisticated and highly customizable tool designed to empower developers and business analysts to create, visualize, and manage complex rule sets with ease. This canvas leverages a dynamic drag-and-drop interface, allowing users to construct intricate logical rules without writing a single line of code. Whether you're building simple conditional statements or complex nested rules, our tool provides the flexibility and functionality to streamline your workflow.
 
