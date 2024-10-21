@@ -308,8 +308,9 @@ Visualize the power of the Interactive Rule Engine Canvas through our screenshot
 ![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/04.jpg?raw=true)
 
 
-![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/04.jpg?raw=true)
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/03.jpg?raw=true)
 
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/05.jpg?raw=true)
 
 ## Tutorials
 
@@ -319,10 +320,8 @@ Enhance your experience with our step-by-step tutorials.
 
 Watch our comprehensive video tutorials to master the tool.
 
-![Tutorial Video Thumbnail](assets/tutorial-video-thumbnail.png)
 
-[![Watch Tutorial Video](assets/watch-tutorial-button.png)](https://www.youtube.com/watch?v=your-tutorial-link)
-
+**Watch Tutorial Video : https://youtu.be/-gk1kTDtnDs **
 ### Written Guides
 
 Prefer reading? Check out our written guides for detailed instructions.
@@ -392,11 +391,7 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 ---
 
-![Footer Image](assets/footer-image.png)
 
-For more information, visit our [website](https://yourwebsite.com) or contact us at [support@yourwebsite.com](mailto:support@yourwebsite.com).
-
----
 
 ## Contact
 
