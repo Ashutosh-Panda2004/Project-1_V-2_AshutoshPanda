@@ -321,7 +321,7 @@ Enhance your experience with our step-by-step tutorials.
 Watch our comprehensive video tutorials to master the tool.
 
 
-**Watch Tutorial Video : https://youtu.be/-gk1kTDtnDs **
+Watch Tutorial Video : https://youtu.be/-gk1kTDtnDs 
 ### Written Guides
 
 Prefer reading? Check out our written guides for detailed instructions.
