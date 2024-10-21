@@ -512,5 +512,116 @@
     "active": false,
     "created_at": "2024-10-20T13:44:04.849Z",
     "updated_at": "2024-10-20T13:44:04.849Z"
+  },
+  {
+    "rule_id": "684890d8-5ceb-4b83-acee-8ac9cdcd4043",
+    "ruleString": "(Age > 20) && (Salary > 10000)",
+    "rule_ast": {
+      "type": "BinaryExpression",
+      "operator": "&&",
+      "left": {
+        "type": "BinaryExpression",
+        "operator": ">",
+        "left": {
+          "type": "Identifier",
+          "name": "Age"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 20,
+          "raw": "20"
+        }
+      },
+      "right": {
+        "type": "BinaryExpression",
+        "operator": ">",
+        "left": {
+          "type": "Identifier",
+          "name": "Salary"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 10000,
+          "raw": "10000"
+        }
+      }
+    },
+    "active": true,
+    "created_at": "2024-10-20T15:48:34.918Z",
+    "updated_at": "2024-10-20T15:48:41.712Z"
+  },
+  {
+    "rule_id": "4bee08a9-228e-45e8-9b26-6e81d396d7bf",
+    "ruleString": "(Age > 30) && (Salary > 10000)",
+    "rule_ast": {
+      "type": "BinaryExpression",
+      "operator": "&&",
+      "left": {
+        "type": "BinaryExpression",
+        "operator": ">",
+        "left": {
+          "type": "Identifier",
+          "name": "Age"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 30,
+          "raw": "30"
+        }
+      },
+      "right": {
+        "type": "BinaryExpression",
+        "operator": ">",
+        "left": {
+          "type": "Identifier",
+          "name": "Salary"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 10000,
+          "raw": "10000"
+        }
+      }
+    },
+    "active": true,
+    "created_at": "2024-10-20T17:00:02.321Z",
+    "updated_at": "2024-10-20T17:00:11.486Z"
+  },
+  {
+    "rule_id": "9ee46ada-6b3d-4ffe-8782-513f900665c0",
+    "ruleString": "(Age > 30) && (Salary > 10000)",
+    "rule_ast": {
+      "type": "BinaryExpression",
+      "operator": "&&",
+      "left": {
+        "type": "BinaryExpression",
+        "operator": ">",
+        "left": {
+          "type": "Identifier",
+          "name": "Age"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 30,
+          "raw": "30"
+        }
+      },
+      "right": {
+        "type": "BinaryExpression",
+        "operator": ">",
+        "left": {
+          "type": "Identifier",
+          "name": "Salary"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 10000,
+          "raw": "10000"
+        }
+      }
+    },
+    "active": true,
+    "created_at": "2024-10-20T17:05:25.817Z",
+    "updated_at": "2024-10-20T17:05:34.704Z"
   }
 ]
