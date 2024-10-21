@@ -385,9 +385,7 @@ We welcome contributions from the community! Follow these steps to contribute to
 - **Testing:** Include relevant tests for your changes to maintain the integrity of the project.
 - **Documentation:** Update the README or other documentation as needed to reflect your changes.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute it as per the license terms.
 
 ---
 
