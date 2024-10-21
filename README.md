@@ -1,6 +1,6 @@
 
 # Interactive Rule Engine Canvas
-![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/01.jpg?raw=true){ width=300 height=200 }
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/01.jpg?raw=true)
 
 Welcome to the **Interactive Rule Engine Canvas**, a sophisticated and highly customizable tool designed to empower developers and business analysts to create, visualize, and manage complex rule sets with ease. This canvas leverages a dynamic drag-and-drop interface, allowing users to construct intricate logical rules without writing a single line of code. Whether you're building simple conditional statements or complex nested rules, our tool provides the flexibility and functionality to streamline your workflow.
 
@@ -34,9 +34,12 @@ Welcome to the **Interactive Rule Engine Canvas**, a sophisticated and highly cu
 
 Experience the power of the Interactive Rule Engine Canvas firsthand. Watch our demo video to see how you can create and manage complex rules effortlessly.
 
-![Demo Video Thumbnail](assets/demo-thumbnail.png)
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/02.jpg?raw=true)
 
-[![Watch Demo](assets/watch-demo-button.png)](https://www.youtube.com/watch?v=your-demo-link)
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/03.jpg?raw=true)
+
+**Demo Video : https://youtu.be/-gk1kTDtnDs**
+
 
 ## Installation
 
@@ -292,21 +295,21 @@ Visualize the power of the Interactive Rule Engine Canvas through our screenshot
 
 ### Main Interface
 
-![Main Interface](assets/main-interface.png)
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/01.jpg?raw=true)
 
 *Main interface showcasing the drag-and-drop functionality.*
 
 ### Rule Generation
 
-![Rule Generation](assets/rule-generation.png)
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/02.jpg?raw=true)
 
-*Generated rule string displayed in the popup.*
 
-### Container Grouping
 
-![Container Grouping](assets/container-grouping.png)
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/04.jpg?raw=true)
 
-*Grouped conditions within a container for better organization.*
+
+![Alt text](https://github.com/Ashutosh-Panda2004/Project-1_V-2_AshutoshPanda/blob/main/screenshots/04.jpg?raw=true)
+
 
 ## Tutorials
 
