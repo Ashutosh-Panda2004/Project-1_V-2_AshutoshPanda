@@ -14,7 +14,7 @@ const app = express();
 app.use(cors({
   // origin: 'http://localhost:5173', // Frontend URL (Adjust if different)
   origin: 'https://project-1-v-2-frontend-ashutoshpanda.onrender.com', // Frontend URL (Adjust if different)
-  methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+  methods: ['GET', 'POST', 'PUT','PATCH', 'DELETE'],
   credentials: true,
 }));
 app.use(express.json());

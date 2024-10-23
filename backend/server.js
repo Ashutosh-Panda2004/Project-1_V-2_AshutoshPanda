@@ -39,7 +39,7 @@ const app = express();
 const allowedOrigins = ['https://project-1-v-2-frontend-ashutoshpanda.onrender.com']; // Add your frontend domain here
 app.use(cors({
   origin: allowedOrigins,
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  methods: ['GET', 'POST', 'PUT','PATCH', 'DELETE'],
   credentials: true, // Include this if using cookies/sessions
 }));
 
