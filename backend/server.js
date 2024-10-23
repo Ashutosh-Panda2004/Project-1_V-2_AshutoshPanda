@@ -36,7 +36,7 @@ const ruleRoutes = require('./routes/ruleRoutes'); // Adjust the path if necessa
 const app = express();
 
 // CORS Configuration
-const allowedOrigins = ['https://project-1-v-2-ashutoshpanda.onrender.com']; // Add your frontend domain here
+const allowedOrigins = ['https://project-1-v-2-frontend-ashutoshpanda.onrender.com']; // Add your frontend domain here
 app.use(cors({
   origin: allowedOrigins,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
